@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculate.activity.MainActivity">
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="352dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/et1"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:hint="Bilangan 2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="354dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="94dp"
+        android:ems="10"
+        android:hint="Bilangan 1"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="127dp"
+        android:text="clear" />
+
+    <Button
+        android:id="@+id/btnbagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et2"
+        android:layout_alignTop="@+id/btnkurang"
+        android:text=":" />
+
+    <Button
+        android:id="@+id/btnkali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnkurang"
+        android:layout_toStartOf="@+id/btnbagi"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/btnkurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btntambah"
+        android:layout_toEndOf="@+id/btntambah"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btntambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/et2"
+        android:layout_marginBottom="202dp"
+        android:text="+" />
+</RelativeLayout>
